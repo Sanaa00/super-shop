@@ -46,7 +46,7 @@ function Products() {
              
             </div>
 
-            <p className='des-card'>{item.description.length<80?item.description: item.description.slice(0,80)+"..."}</p>
+            <p className='des-card'>{item.description.length<70?item.description: item.description.slice(0,70)+"..."}</p>
           </div>
           
         </button></Link>
