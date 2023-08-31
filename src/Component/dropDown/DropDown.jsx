@@ -4,7 +4,7 @@ import { addSort} from '../../features/sortSlice';
 import { useDispatch } from 'react-redux';
 import { useGetAllProductsQuery } from '../../features/products';
 function DropDown() {
-
+//TODO: design must change
      const dispatch=useDispatch()
      const [selectedValue, setSelectedValue] = useState('');
      const options = ['normal', 'desc', 'asc'];

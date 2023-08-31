@@ -1,27 +1,17 @@
 import { NavLink, Outlet } from 'react-router-dom'
 import './Sidbar.style.css'
-import { useEffect, useState } from 'react';
-import WelcomScreen from '../welcomeScreen/Welcomscreen';
+import {  useState } from 'react';
 import { TbCategory } from "react-icons/tb";
 import { AiOutlineMenu } from "react-icons/ai";
 import Navbar from '../Navbar/Navbar';
 function Sidbar() {
-  const [showWelcome, setShowWelcome] = useState(true);
+
   const [open,setOpen]=useState(false)
     
   const toggle = () => {
     setOpen(!open)
   }
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-         setShowWelcome(false);
-    }, 5000);
 
-    return () => clearTimeout(timeout);
-    }, [showWelcome, setShowWelcome]);
-  
-  
-  if(showWelcome)return <WelcomScreen/>
   return (
     <div className='grid'>
       <div className='sidbar' style={{width:open?"20%":"10%"}}>
