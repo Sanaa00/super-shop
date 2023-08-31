@@ -1,0 +1,21 @@
+
+.button{
+  background-color: #1AB96D;
+  border-color:  #1AB96D;
+  border-radius: 3px  ;
+  padding: 10px 20px;
+  color: #ffffff;
+  display: flex ;
+  align-items: center;
+  box-shadow :none;
+  height:48px;
+  
+}
+.button-icons{
+     width: 20px;
+     height: 20px;
+}
+.button-text{
+     font-size: 16px;
+     margin: 0px;
+}

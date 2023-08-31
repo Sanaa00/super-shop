@@ -1,0 +1,53 @@
+.form{
+     display: flex;
+     flex-direction: column;
+
+}
+.layout-col{
+
+     display: flex;
+     flex-direction: column;
+}
+.lable{
+     font-size: 16;
+     font-weight: 700;
+     margin-top: 1rem;
+     margin-bottom: 5px;
+}
+.input{
+     background-color: #E4E4E4;
+     border: 1px #A5A5A5 solid;
+     padding-left: 5px;
+     height: 40px;
+     width: 438px;
+     border-radius: 4px;
+}
+.error-msg{
+     margin-top: 5px;
+}
+.button-form{
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: end;
+     align-items: center;
+     margin-top: 20px;
+     border-top: 1px #A5A5A5 solid;
+     padding-top:20px
+}
+.close-btn{
+      background-color: #ffffff;
+  border-color:  #2B2B2B;
+  border-radius: 3px  ;
+  padding: 10px 20px;
+  color: #000000;
+  display: flex ;
+  align-items: center;
+  box-shadow :none;
+  height:48px;
+  font-size: 16px;
+  margin: 0rem 1rem;
+}
+
+.form{
+     padding: 1rem;
+}

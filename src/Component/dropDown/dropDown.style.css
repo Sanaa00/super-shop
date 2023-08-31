@@ -1,0 +1,31 @@
+.dropdown-container {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown {
+  padding: 8px;
+  border: 2px solid #1AB96D;
+  border-radius: 4px;
+  outline: none;
+  height: 48px;
+  width: 140px;
+  color:#1AB96D ;
+  background-color: white;
+  background: white url('../../assets/images/arrow-down-icon.png') no-repeat right center;
+   background-position: calc(100% - 20px) center;
+}
+
+.dropdown.selected {
+  border-color: #1AB96D;
+}
+ .dropdown option {
+  padding: 8px;
+  border-radius: 0px;
+  margin-top: 10px;
+}
+
+
+
+
+
