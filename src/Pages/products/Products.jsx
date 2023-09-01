@@ -35,7 +35,7 @@ function Products() {
   return (
     <div className="product">
       <div className='cards'> {currentData?.map((item) => {
-        return <Link key={item.id} to={`/products/${item.id}`}>
+        return <Link key={item.id} to={`/products/${item.id}`} className='link-single'>
           <button  key={item.id} className='card' onClick={()=>openModal()}>
           <img className='img-card' src={item.image} alt="product" />
           <div>
