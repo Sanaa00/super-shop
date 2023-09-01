@@ -8,9 +8,6 @@ function SingleItem({ modalIsOpen, closeModal }) {
 
      const { id } = useParams();
      const { data: singleItem } = useGetSingleProductQuery({ id })
-     console.log("single item", singleItem)
-  
-
   return (
        <div className='single-item'>
             <div className='modal-div'>
@@ -28,12 +25,13 @@ function SingleItem({ modalIsOpen, closeModal }) {
                            <div className='info-section'>
                            <img src={singleItem?.image} alt="product" className='single-image' />
                            <div className='info'>
-                                <div className='layout'><p>Price</p><p className='price-singleItem'>{singleItem?.price}</p></div>
-                                <div className='layout'><p>Category</p><p>{singleItem?.category}</p></div>
-                                <div className='layout'><p>Rating</p><p>{singleItem?.rating?.rate}</p></div>
+                                <div className='layout'><p className='p-single '>Price</p><p className=' price-single p-single'>${singleItem?.price}</p></div>
+                                     <div className='layout'><p className='p-single'>Category</p>
+                                          <p className='p-single'>{singleItem?.category}</p></div>
+                                <div className='layout'><p className='p-single'>Rating</p><p className='p-single'>{singleItem?.rating?.rate}</p></div>
                                 <div className='des'>
-                                     <p className=''>Description</p>
-                                     <p className=''>{ singleItem?.description}</p>
+                                     <p className='des-des p-single'>Description</p>
+                                     <p className='des-singleItem p-single'>{ singleItem?.description.slice(0,500)}</p>
                                 </div>
                            </div>
                  </div>

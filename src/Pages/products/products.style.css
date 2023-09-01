@@ -7,6 +7,7 @@
       gap: 1rem;
       align-items: center;
       margin: 1rem;
+      height: 600px;
 }
 .img-card{
       width: 100%;
@@ -36,6 +37,9 @@ a{
 }
 .title-product{
       font-size: 16px;
+      font-weight: 700;
+      padding: 0px;
+      text-align: left;
 }
 .price{
       font-size: 20px;
@@ -45,4 +49,7 @@ a{
         margin-left: 1rem;
       margin-right: 1rem;
       margin-top: 0px;
+      font-size: 16px;
+      padding: 0px;
+      font-weight: 400;
 }

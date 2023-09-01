@@ -4,7 +4,7 @@ import { addSort} from '../../features/sortSlice';
 import { useDispatch } from 'react-redux';
 import { useGetAllProductsQuery } from '../../features/products';
 function DropDown() {
-//TODO: design must change to be better 
+// Note: The API sorts by ID, so we are sorting the data by price in the frontend
   const dispatch = useDispatch();
   const [selectedOption, setSelectedOption] = useState('normal'); 
   const [showOptions, setShowOptions] = useState(false);

@@ -42,11 +42,11 @@ function Products() {
 
             <div className='info-card'>
               <p className='title-product'> {item.title.slice(0,20)}</p>
-              <p className='price'>{ item.price}</p>
+              <p className='price'>${ item.price}</p>
              
             </div>
 
-            <p className='des-card'>{item.description.length<60?item.description: item.description.slice(0,60)+"..."}</p>
+            <p className='des-card'>{item.description.length<40?item.description: item.description.slice(0,40)+"..."}</p>
           </div>
           
         </button></Link>
